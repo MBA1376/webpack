@@ -1,7 +1,7 @@
 import '../../scripts/slider';
 
 /**load styles */
-import '../../styles/index.css';
+// import '../../src/styles/index.scss';
 
 import {test} from './test';
 
