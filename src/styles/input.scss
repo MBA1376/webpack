@@ -1,0 +1,6 @@
+input {
+    outline: none;
+    &:focus {
+      transform: scale(1.02);
+    }
+}

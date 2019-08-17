@@ -1,0 +1,104 @@
+@import './sidebar.scss';
+@import './util.scss';
+@import './main.scss';
+
+
+html {
+  margin : 0;
+  
+}
+.page-container {
+  background-color : #eee;
+  position: relative;
+  height : 100vh;
+  // display: grid;
+  // grid-template-columns: 2.3fr .7fr;
+  // grid-auto-flow: row;
+}
+
+.sidebar {
+
+  color : lightgray;
+  height : 100vh;
+  position: fixed;
+  top : 0;
+  right : 0;
+  background-color: rgba(#000, .8);
+  width : 60px;
+  float : right;
+  border-radius: 4px;
+  z-index : 9999999999999999999999999;
+
+}
+
+.main-area {
+  text-align: right;
+ 
+  // margin-right : -270px;
+}
+
+.main {
+  width : 90%;
+  background-color : #fff;
+  margin-left : auto;
+  margin-right : auto;
+  border-radius: 4px;
+  height : 100vh;
+  box-shadow: 12px 0 15px -4px  rgba(0, 0, 0, 0.4), -12px 0 8px -4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &> div {
+    width: 100%;
+    // height: 50vh;
+  }
+  &> div > h3 {
+    font-family: BYekan;
+    margin-bottom: 50px;
+    color : #4a0060;
+  }
+  &>div > div > input {
+    text-align: right;
+    width : 50%;
+    height: 40px;
+    margin-bottom: 40px;
+    border :none;
+    border-bottom: 1px solid rgba(0 , 0 , 0 , .7);
+  }
+  
+  &>div > div > input[type="file"]::before {
+    width : 30%;
+    text-align : right;
+  }
+  &>div>div>textarea {
+    width :50%;
+    height : 300px;
+    margin-bottom: 40px;
+    text-align : right;
+  }
+
+  &> div > button {
+    color : lightgray;
+    width : 40%;
+    height : 40px;
+    border : none;
+    border-radius: 7px;
+    background-image:linear-gradient(to right,#140031 , #5b0082);
+  }
+
+  &> div > div:nth-child(5) {
+    margin-bottom: 50px;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1296px) {
+  .main-area {
+    margin-right : 40px;
+  }
+}

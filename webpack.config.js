@@ -9,7 +9,8 @@ const extractPlugin = new ExtractTextPlugin({
 module.exports = {
     entry : {
         index : './src/js/app.js'  ,
-        test : './src/js/test.js'
+        test : './src/js/test.js' ,
+        admin : './src/js/admin.js'
     },
     output : {
         path : path.join(__dirname , 'dist') ,

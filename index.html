@@ -2,6 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         <title>انجمن بازی های رایانه ای دانشگاه گلستان</title>  
                
         <!-- include rtl bootstrap css -->
@@ -19,8 +22,8 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <a class="navbar-brand ml-3" href="#">ثبت نام</a>
-                  <a class="navbar-brand mr-3" href="#">ورود</a>
+                  <a href="#open-signup-modal" class="navbar-brand ml-3">ثبت نام</a>
+                  <a href="#open-login-modal" class="navbar-brand mr-3" href="#">ورود</a>
                   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item ml-3">
                       <a class="nav-link" href="#">درباره ما</a>
@@ -37,22 +40,22 @@
                   </ul>
                  
                 </div>
-                <a href="#" class="nav-link"><img src="images/game-logo.jpg" style="border-radius: 50px"></a>
+                <a id="logo" href="#" class="nav-link"><img id="logo-image" src="images/game-logo.jpg" style="border-radius: 50px"></a>
               </nav>
             <!-- end navbar -->
 
             <!-- about anjoman -->
             <div class="container mb-3" style="margin-top:100px; border-bottom: 1px solid #bbb; padding-bottom: 30px;">
-                <div class="row">
-                    <div class="col-md-7">
+                <div class="row about">
+                    <div id="about-img" class="about-img">
                         <img style="width : 100%;" src="images/workplace.jpg">
                     </div>
                    
-                    <div class="col-md-5" style="background-color: #eee; padding:30px;">
+                    <div id="about-desc" class="about-desc" style="background-color: #eee; padding:30px;">
                         <div class="row"><div class="col-md-12 text-center">عنوان</div></div>
                         <div style="width:60%; border-bottom: 1px solid #888; margin :10px 18% 10px 0px;"></div>
                        
-                        <div class="row">
+                        <div  class="row">
                             <div class="col-md-12" style="font-size:15px; color:#777;">
                                 تهیه متن وب سایت
                                 وجود وب سایت شما، به مطالب و مواد گرافیکی مانند کلمات، نمادهای بصری و گرافیکی، فایلهای صوتی و تصویری که برای آن انتخاب می کنید وابسته است.
@@ -149,7 +152,7 @@
                       </div>
                   </div>
                 </div>
-                <h1 style="text-align: center; margin-top:30px;"><a href="#" class="btn btn-info pl-5 pt-2 pb-2 pr-5">اخبار و رویداد های بیشتر</a></h1>
+                <h1 style="text-align: center; margin-top:30px;"><a  id="test" href="#" class="test btn btn-info pl-5 pt-2 pb-2 pr-5">اخبار و رویداد های بیشتر</a></h1>
                 <div style="width:100%; border-bottom: 1px solid #aaa; margin : 30px auto;"></div>
               </div>
           </div>
@@ -158,35 +161,35 @@
         <!-- Members of anjoman -->
           <div class="container" style="padding-bottom: 20px;">
             <h2 style="text-align: center; margin-bottom: 40px;">اعضای انجمن</h2>
-            <div class="row text-center">
+            <div class="row text-center member-area">
               
-              <div class="col-md-4">
-                <img style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
+              <div class="col-md-4 member-item">
+                <img class="member-img" style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
                 <p>محمدباقر عباسی</p>
               </div>
 
-              <div class="col-md-4">
-                  <img style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
+              <div class="col-md-4 member-item">
+                  <img class="member-img" style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
                   <p>محمدباقر عباسی</p>
               </div>
 
-              <div class="col-md-4">
-                  <img style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
+              <div class="col-md-4 member-item">
+                  <img  class="member-img" style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
                   <p>محمدباقر عباسی</p>
               </div>
 
-              <div class="col-md-4">
-                  <img style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
+              <div class="col-md-4 member-item">
+                  <img  class="member-img" style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
                   <p>محمدباقر عباسی</p>
               </div>
 
-              <div class="col-md-4">
-                  <img style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
+              <div class="col-md-4 member-item">
+                  <img class="member-img"  style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
                   <p>محمدباقر عباسی</p>
               </div>
 
-              <div class="col-md-4">
-                  <img style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
+              <div class="col-md-4 member-item">
+                  <img class="member-img"  style="width:150px; height:150px; border-radius: 100px;" src="images/bagher.jpg"> 
                   <p>محمدباقر عباسی</p>
               </div>
               
@@ -199,8 +202,8 @@
           <footer>
             <div style="width:80%; border-bottom: 1px solid #777; margin: 0 auto;"></div>
 
-            <div class="container">
-              <div class="row d-flex justify-content-center text-center mt-3">
+            <div class="container icons">
+              <!-- <div class="row d-flex justify-content-center text-center mt-3 icons"> -->
                 <div class="col-md-1">
                     <a href="#" class="icon"><i class="fa fa-telegram"></i></a>
                 </div>
@@ -214,10 +217,37 @@
                     <a href="#" class="icon"><i class="fa fa-facebook-f"></i></a>
                 </div>
                 
-              </div>
+              <!-- </div> -->
             </div>
           </footer>
         <!-- end footer -->
+
+        <!-- start:: sign up modal -->
+        <div id="open-signup-modal" class="modal-window">
+          <div class="modal-items">
+            <a href="#" title="Close" class="modal-close"><i style="font-size: 35px;" class="fa fa-angle-left"></i></a>
+            <input class="modal-item" placeholder="نام و نام خانوادگی" />
+            <input class="modal-item" placeholder="ایمیل" />
+            <input class="modal-item" placeholder="رمز عبور" />
+            <input class="modal-item" placeholder="تایید رمز عبور" />
+            <button>ثبت نام</button>
+          </div>
+        </div>
+        <!-- end:: sign up modal -->
+        
+        <!-- start:: login modal -->
+        <div id="open-login-modal" class="modal-window">
+          <div class="modal-items">
+            <a href="#" title="Close" class="modal-close"><i style="font-size: 35px;" class="fa fa-angle-left"></i></a>
+            <div id="login-items">
+                <input class="modal-item" placeholder="ایمیل" />
+                <input class="modal-item" placeholder="رمز عبور" />
+                <button>ورود</button>
+            </div>
+          </div>
+        </div>
+        <!-- end:: login modal -->
+
 
         <!-- rtl bootstrap links -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
@@ -232,7 +262,7 @@
 
 
         <!-- custom scripts -->
-        <script type="text/javascript" src="dist/bundle.js"></script>
+        <script type="text/javascript" src="dist/index.js"></script>
         <script type="text/javascript" src="dist/test.js"></script>
 
     </body>

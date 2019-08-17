@@ -1,93 +1,18 @@
-/* @font-face {
-  font-family: 'yekan';
-  src: url('fonts/B_Yekan/Yekan.ttf');
-  font-weight: normal;
-  font-style: normal;
-} */
+@import './input.scss';
+@import './slider.scss';
+@import './navbar.scss';
+@import './footer.scss';
+@import './modal.scss';
+@import './animations.scss';
+@import './responsive.scss';
+
+@import './admin/index.scss';
+
+
 html {
   font-family: 'yekan';
 }
 
-/* navbar */
-.my-navbar{
-  position : fixed;
-  top:0;
-  left : 0;
-  right : 0;
-  z-index: 100000;
-  background-color: white;
-  
+#logo-image {
+  -webkit-animation: rotation 5s infinite linear;
 }
-/* end navbar */
-
-/* slider */
-.post-slider{
-  position : relative;
-}
-
-.post-slider .next {
-  position : absolute;
-  top : 50%;
-  left : 30px;
-  font-size: 2em;
-  cursor: pointer;
-}
-
-.post-slider .prev {
-  position : absolute;
-  top : 50%;
-  right : 30px;
-  font-size: 2em;
-  cursor: pointer;
-}
-
-.post-slider .slider-title{
-  text-align : center;
-  margin : 30px auto;
-}
-
-.post-slider .post-wrapper{
-  width : 84%;
-  height : 350px;
-  margin : 0 auto;
-  padding : 10px 0px;
-  overflow: hidden;
-}
-
-.post-slider .post-wrapper .post {
-  width : 300px;
-  height : 330px;
-  margin : 0px 10px;
-  display : inline-block;
-  background-color : lightgray;
-  border-radius: 5px;
-  box-shadow: 1rem 1rem 1rem 1rem #a0a0a033;
-  font-family: 'yekan';
-}
-
-
-.post-slider .post-wrapper .post a{
-  color : #222;
-  text-decoration: none;
-}
-
-.post-slider .post-wrapper .post .slider-image{
-  width : 100%;
-  height : 200px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-/*end slider section */
-
-/* footer */
-footer{
-  background-color : #383c47;
-  height : 300px;
-  padding : 50px 10px 30px 10px;
-}
-
-.icon{
-  font-size: 20px;
-  color : white;
-}
-/* end footer */
