@@ -4,27 +4,33 @@ import '../../scripts/slider';
 import '../styles/index.scss';
 
 import {test} from './test';
-let temp = false;
-let element = document.getElementsByClassName('test')[0];
-setInterval( () => {
-if(temp) {
-    element.style.backgroundColor = '#004';
-    temp = !temp;
-}
-else {
-    element.style.backgroundColor = '#040';
-    temp = !temp;
-}
-    
-} , 3000);
+// (function bannerSlide() {
+//     var slideIndex = 0;
+//     showSlides();
 
-if(document.documentElement.clientWidth < '794px' ) {
-    document.getElementById('about-img').style.width = '700px';
-}
+//     function showSlides() {
+//         var i;
+//         var slides = document.getElementsByClassName("mySlides");
+//         var dots = document.getElementsByClassName("dot");
+//         for (i = 0; i < slides.length; i++) {
+//             slides[i].style.display = "none";  
+//         }
+//         slideIndex++;
+//         if (slideIndex > slides.length) {slideIndex = 1}    
+//         for (i = 0; i < dots.length; i++) {
+//             dots[i].className = dots[i].className.replace(" active", "");
+//         }
+//         slides[slideIndex-1].style.display = "block";  
+//         dots[slideIndex-1].className += " active";
+//         setTimeout(showSlides, 2000); // Change image every 2 seconds   
+//     }
+// })();
+
 setInterval( () => {
     console.log(document.documentElement.clientWidth);
-} , 4000);
+} , 2000);
 let test2 = test;
+
 
 
 console.log(test2);

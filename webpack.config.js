@@ -1,9 +1,10 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+//const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const extractPlugin = new ExtractTextPlugin({
-    filename : 'app.css'
-});  
+// const extractPlugin = new ExtractTextPlugin({
+//     filename : 'app.css'
+// });  
 
 
 module.exports = {
@@ -28,15 +29,25 @@ module.exports = {
                    }
                }]
            } ,
-           {
-               test : /\.scss$/ ,
-               use : extractPlugin.extract({
-                   use : ['css-loader' , 'sass-loader']
-               })
-           }
+        //    {
+        //        test : /\.scss$/ ,
+        //        use : extractPlugin.extract({
+        //            use : ['css-loader' , 'sass-loader']
+        //        }) 
+        //    } 
+        {
+            test: /\.s?[ac]ss$/,
+            use: [
+                MiniCssExtractPlugin.loader,
+                { loader: 'css-loader', options: { url: false, sourceMap: true } },
+                { loader: 'sass-loader', options: { sourceMap: true } }
+            ],
+        }
         ]
     } ,
     plugins : [
-        extractPlugin
+        new MiniCssExtractPlugin({
+            filename: 'app.css'
+        }),
     ]
 };

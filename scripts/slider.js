@@ -4,7 +4,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         nextArrow : $(".next") ,
         prevArrow : $(".prev") ,
         responsive: [
@@ -18,14 +18,14 @@ $(document).ready(function(){
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 1000,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 600,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

@@ -1,28 +1,3 @@
-@media only screen and (min-width: 978px) and (max-width: 1163px){
-    .about {
-      display : flex;
-      justify-content: center;
-    }
-    .about-img {
-      width : 650px;
-    } 
-    .about-desc {
-      width : 650px;
-    }
-  }
-  
-  @media screen and (min-width: 1182px) {
-    .about {
-      display : flex;
-      justify-content: center;
-    }
-    .about-img {
-      width : 550px;
-    } 
-    .about-desc {
-      width : 550px;
-    }
-  }
   
   @media screen and (max-width: 770px) {
     .member-area {
@@ -39,10 +14,7 @@
   }
   
   @media screen and (max-width: 360px) {
-    .my-navbar {
-      height : 85px;
-    }
-  
+    
     .member-area {
       display : flex;
       justify-content: space-between;
