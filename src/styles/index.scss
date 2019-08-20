@@ -8,7 +8,16 @@
 
 @import './admin/index.scss';
 
+@font-face {
+  font-family: "Byekan";
+  src: url('./font/BYekan.eot') format('embedded-opentype') ,
+  url('./font/BYekan.woff') format('woff') ,
+  url('./font/BYekan.ttf') format('truetype')
+}
 
+body {
+  font-family: Byekan;
+}
 
 .banner {
   width:100%;     
